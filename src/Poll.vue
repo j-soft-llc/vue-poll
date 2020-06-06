@@ -26,7 +26,7 @@
                 
             </div>
         </div>
-        <div class="votes" v-if="showTotalVotes && (visibleResults || finalResults)" v-text="totalVotesFormatted + ' votes'"></div>
+        <div class="votes" v-if="showTotalVotes && (visibleResults || finalResults)" v-text="totalVotesFormatted + ' голосов'"></div>
         
         <template v-if="!finalResults && !visibleResults && multiple && totalSelections > 0">
              <a href="#" @click.prevent="handleMultiple" class="submit" v-text="submitButtonText"></a>
